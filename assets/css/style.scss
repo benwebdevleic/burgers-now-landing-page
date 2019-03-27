@@ -1,0 +1,188 @@
+---
+---
+@import "bootstrap";
+
+@font-face {
+    font-family: "Insaniburger";
+    src: local('Insaniburger'),
+        url({{ '/assets/fonts/Insanibu.ttf' | relative_url }}) format('truetype'),
+        url({{ '/assets/fonts/Insanibu.woff' | relative_url }}) format('woff');
+}
+
+.hide-mobile {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+* {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#masthead {
+  background-color: #662917;
+  color: #fff;
+
+  @media screen and (min-width: 768px) {
+      height: 70px;
+  }
+}
+
+.link-homepage {
+  color: #fff;
+  display: block;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.site-title {
+  margin: 0;
+  line-height: 70px;
+  background-image: url({{ '/assets/img/burger-icon.svg' | relative_url }});
+  background-repeat: no-repeat;
+  background-position: center top;
+  font-weight: normal;
+  font-size: 1.5rem;
+  font-family: "Insaniburger";
+  background-size: 64px;
+  text-align: center;
+  padding-top: 44px;
+
+  @media screen and (min-width: 468px) {
+    padding-left: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 2.5rem;
+    background-size: auto;
+    text-align: left;
+    padding-left: 64px;
+    background-position: left top;
+    padding-top: 0;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Insaniburger";
+}
+
+.header-content {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#de531a+0,bf2600+100 */
+  background: #de531a; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #de531a 0%, #bf2600 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #de531a 0%,#bf2600 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #de531a 0%,#bf2600 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de531a', endColorstr='#bf2600',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  padding: 20px 15px;
+  color: #fff;
+
+  @media screen and (min-width: 768px) {
+      padding: 100px 10px;
+  }
+
+  .btn-outline-primary {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3px;
+  }
+}
+
+.section {
+  padding: 20px 15px;
+
+  @media screen and (min-width: 768px) {
+    padding: 80px 100px;
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin: 20px 0 40px;
+}
+
+.section-alt {
+  background-color: #eee;
+}
+
+.btn-primary {
+  background-color: #662917;
+  border-color: #662917;
+}
+
+.section-contact p {
+  text-align: center;
+}
+
+.feature {
+  text-align: center;
+}
+
+#footer {
+  height: 140px;
+  background-color: #351406;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: #fff;
+  }
+}
+
+.phone-mockup {
+  width: 100%;
+  height: auto;
+  max-width: 320px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.content {
+  padding: 50px 0;
+}
+
+.menu-footer {
+
+  ul {
+    padding-left: 0;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+.feature-icon {
+  margin-bottom: 20px;
+
+  i {
+    font-size: 4rem;
+  }
+}
+
+.text-billboard {
+  position: relative;
+  padding-left: 50px;
+
+  i {
+    position: absolute;
+    left: 0;
+    top: -2px;
+    font-size: 1.5rem;
+  }
+
+  strong {
+    font-size: inherit;
+  }
+}
